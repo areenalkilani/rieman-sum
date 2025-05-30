@@ -5,15 +5,17 @@ This program estimates the definite integral of a function using the **Riemann S
 
 ---
 
-## 📌 Overview
+##  Overview
 
 We approximate the integral of a function `f(x)` over a specified interval `[a, b]` by dividing it into `n` rectangles. The work is split among multiple threads to improve performance on multi-core systems.
 
 ---
 
-## 🛠️ How to Compile
+## How to Compile
 
 Use the following command in the terminal:
 
 ```bash
 gcc -o riemann riemann_integral.c -lpthread
+## how to run
+./riemann <a> <b> <n> <num_threads>
